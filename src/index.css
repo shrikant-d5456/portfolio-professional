@@ -7,9 +7,6 @@ body{
 font-family: "Poppins",sans-serif;
 }
 
-.logoimg{
-  border-radius: 56% 44% 55% 45% / 47% 59% 41% 53%;
-}
 
 .animate-spin {
   animation: spin 4s linear infinite;
