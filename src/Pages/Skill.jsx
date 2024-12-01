@@ -3,53 +3,72 @@ import { Slide } from "react-awesome-reveal";
 
 const skillData = [
     {
-        id: 1,
-        skill_name: "ReactJS",
-        desc: "A JavaScript library for building user interfaces.",
-        img: "https://via.placeholder.com/100",
-        range: 8, // Skill level out of 10
+        id:10,
+        img: "https://w7.pngwing.com/pngs/441/460/png-transparent-postgresql-plain-wordmark-logo-icon.png",
+        skill_name: "PostgreSQL",
+        range: 8.0,
+       
     },
     {
-        id: 2,
-        skill_name: "Tailwind CSS",
-        desc: "Utility-first CSS framework for modern UI design.",
-        img: "https://via.placeholder.com/100",
-        range: 9,
-    },
-    {
-        id: 3,
-        skill_name: "Node.js",
-        desc: "JavaScript runtime for server-side programming.",
-        img: "https://via.placeholder.com/100",
-        range: 7,
-    },
-    {
-        id: 4,
+        id:9,
+        img: "https://th.bing.com/th/id/R.9c2c379aef549a2cf9266bcc409ecf03?rik=Vo%2f7VWyCHM60Ew&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fmongodb-png--1000.png&ehk=kjjn5rqJgQ8SBkkmFm9UTRWhxyIhJD3%2bp%2fFhPF0WgHA%3d&risl=&pid=ImgRaw&r=0",
         skill_name: "MongoDB",
-        desc: "NoSQL database for modern applications.",
-        img: "https://via.placeholder.com/100",
-        range: 8,
+        range: 8.0,
+        
     },
     {
-        id: 5,
-        skill_name: "Express.js",
-        desc: "Web application framework for Node.js.",
-        img: "https://via.placeholder.com/100",
-        range: 7,
+        id:8,
+        img: "https://aglowiditsolutions.com/wp-content/uploads/2018/12/ExpressJS.png",
+        skill_name: "Express",
+        range: 8.0,
+        
     },
     {
-        id: 6,
-        skill_name: "HTML & CSS",
-        desc: "Foundation of web design and development.",
-        img: "https://via.placeholder.com/100",
-        range: 9,
+        id:7,
+        img: "https://e7.pngegg.com/pngimages/306/37/png-clipart-node-js-logo-node-js-javascript-web-application-express-js-computer-software-others-miscellaneous-text.png",
+        skill_name: "NodeJs",
+        range: 8.0,
+        
     },
     {
-        id: 7,
-        skill_name: "JavaScript",
-        desc: "Versatile programming language for the web.",
-        img: "https://via.placeholder.com/100",
-        range: 9,
+        id:6,
+        img: "https://cdn.dribbble.com/users/3865/screenshots/14403810/media/50de49976e47e90626e7aac690176553.png?resize=640x480&vertical=center",
+        skill_name: "Figma",
+        range: 8.3,
+        
+    },
+    {
+        id:5,
+        img: "https://cdn3.iconfinder.com/data/icons/social-media-circle/512/circle-github-512.png",
+        skill_name: "Git and GitHub",
+        range: 8.0,
+        
+    },
+    {
+        id:4,
+        img: "https://icon-library.com/images/react-icon/react-icon-0.jpg",
+        skill_name: "ReactJs",
+        range: 8.8,
+        
+    },
+    {
+        id:3,
+        img: "https://img.favpng.com/2/12/22/javascript-icon-png-favpng-ruDBDhxzVxWHgXXtH2Hi1XzJf.jpg",
+        skill_name: "Java Script",
+        range: 8.2,
+        },
+    {
+        id:2,
+        img: "https://static-00.iconduck.com/assets.00/file-type-css-icon-1806x2048-r5fwjl3p.png",
+        skill_name: "CSS",
+        range: 8.5,
+         },
+    {
+        id:1,
+        img: "https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png",
+        skill_name: "HTML",
+        range: 8.5,
+        
     },
 ];
 
@@ -75,9 +94,10 @@ const Skill = () => {
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                 {(showAll ? skillData : skillData.slice(0, 4)).map((skill, index) => (
                     <Slide triggerOnce direction="right" key={index}>
-                        <div className="flex items-center bg-gradient-to-b from-gray-50 to-gray-100 rounded-lg gap-4 py-4 px-4 shadow-md hover:shadow-lg transition-shadow">
+                        <div 
+                        className="flex items-center justify-center bg-gradient-to-r from-white via-purple-200 to-white rounded-lg  gap-4 p-4 ">
                             {/* Skill Icon */}
-                            <div className="w-[140px] h-[100px] rounded-full border-4 border-gray-300 overflow-hidden mb-4">
+                            <div className="w-[100px] h-[100px] rounded-full border-4 border-white overflow-hidden mb-4">
                                 <img
                                     src={skill.img}
                                     alt={skill.skill_name}

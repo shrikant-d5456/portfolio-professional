@@ -1,27 +1,52 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal"; 
 import { BsGithub, BsLink } from "react-icons/bs";
+import assist from '../assets/assist.png'
+import news from '../assets/news.png'
+import pattern from '../assets/pattern.png'
+import scissorgame from '../assets/penpapersccisor.png'
+import weather from '../assets/weather.png'
+import student from '../assets/student.jpeg'
+import blog from '../assets/blog.jpeg'
 
 const Project = () => {
   const projectData = [
     {
-      gitLink: "https://github.com/your-profile/project1",
-      webLink: "https://your-project1.com",
-      projectName: "Project 1",
-      img: "https://via.placeholder.com/150", // Replace with project image URL
-    },
-    {
-      gitLink: "https://github.com/your-profile/project2",
-      webLink: "https://your-project2.com",
-      projectName: "Project 2",
-      img: "https://via.placeholder.com/150", // Replace with project image URL
-    },
-    {
-      gitLink: "https://github.com/your-profile/project3",
-      webLink: "https://your-project3.com",
-      projectName: "Project 3",
-      img: "https://via.placeholder.com/150", // Replace with project image URL
-    },
+      gitLink:"https://github.com/shrikant-d5456/Blog_WebApp",
+      img:blog,
+      projectName:"Blog WebApp using MERN Technology"
+  },
+  {
+      gitLink:"https://github.com/shrikant-d5456/Student_Attendance",
+      img:student,
+      projectName:"According attendance get its parent emails"
+  },
+  {
+      gitLink:"https://github.com/shrikant-d5456/desktopAssistant",
+      img:assist,
+      projectName:"Desktop Assistent like Gemini"
+  },
+  {
+      gitLink:"https://github.com/shrikant-d5456/pattern_printing_app",
+      webLink:"https://pattern-printing-app.vercel.app/",
+      img:pattern,
+      projectName:"Enter text to printting PATTERN in C++"
+  },
+  {
+      gitLink:"https://github.com/shrikant-d5456/",
+      img:weather,
+      projectName:"Weather WebApp Using Api Key"
+  },
+  {
+      gitLink:"https://github.com/shrikant-d5456/Pen-Paper-Scissor-Game",
+      img:scissorgame,
+      projectName:"Pen Papper Sccisor Game in ReactJs"
+  },
+  {
+      gitLink:"https://github.com/shrikant-d5456/",
+      img:news,
+      projectName:"News WebApp using Api key"
+  },
   ];
 
   return (
@@ -40,7 +65,7 @@ const Project = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData.map((project, index) => (
             <Fade direction="left" triggerOnce key={index}>
-              <div className="bg-white shadow-lg p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-white shadow-lg p-4 hover:shadow-xl transition-shadow duration-300 hover:scale-250">
                 {/* Project Image */}
                 <img
                   src={project.img}
@@ -61,14 +86,17 @@ const Project = () => {
                     >
                      <BsGithub/>
                     </a>
+                    {project?.webLink &&
                     <a
-                      href={project.webLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className=" text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-xl border-2 rounded-full p-1" 
-                    >
-                      <BsLink/>
-                    </a>
+                    href={project.webLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-xl border-2 rounded-full p-1" 
+                  >
+                    <BsLink/>
+                  </a>
+                    }
+                    
                   </div>
                 </div>
               </div>
