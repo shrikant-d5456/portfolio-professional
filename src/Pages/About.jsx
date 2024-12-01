@@ -18,11 +18,11 @@ const About = () => {
             <div className="relative  md:bg-gradient-to-r md:from-blue-500 md:via-purple-500 md:to-pink-500 p-1 rounded-lg">
                 <div className="bg-white shadow-lg rounded-lg lg:p-4 md:p-4 p-1 lg:max-w-6xl md:max-w-6xl lg:flex md:flex items-center">
                     {/* Logo Section */}
-                    <div className="lg:w-1/3 md:w-1/3 my-4 rotate-45 md:bg-gradient-to-r md:from-blue-500 md:via-purple-500 md:to-pink-500  flex justify-center rounded-full">
+                    <div className="lg:w-1/3 md:w-1/3 md:mt-0 mt-20 my-4 md:rotate-45 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500  flex justify-center rounded-full">
                         <img
                             src={aboutData.img}
                             alt="Logo"
-                            className="w-60 h-60 object-cover flex rotate-[315deg] rounded-full border-white border-8"
+                            className="w-60 h-60 object-cover flex md:rotate-[315deg] rounded-full border-white border-8"
                         />
                     </div>
                     {/* Info Section */}
